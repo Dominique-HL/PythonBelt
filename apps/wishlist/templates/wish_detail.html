@@ -1,0 +1,24 @@
+{%load static%}
+<head>
+    <head>
+        {% load static %}
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+<div class="mx-auto" style="width:700px;">
+    <h1>Editemos tu deseo</h1>
+
+
+<form action = '' id = "formWish" method = "post">
+
+    {% csrf_token%}
+    {{ formWish.as_p }}
+
+    <button type ="submit">Guardar</button>
+
+</form>
+</div>
+</body>
